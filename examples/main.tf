@@ -3,7 +3,7 @@ provider "ibm" {
 }
 
 module "instance_scheduler" {
-    source = "git::https://github.com/Cloud-Schematics/terraform-ibm-instance-scheduler//module"
+    source = "git::https://github.com/nven/terraform-ibm-instance-scheduler//module"
 
     inventories = var.inventories
     schedules = var.schedules
