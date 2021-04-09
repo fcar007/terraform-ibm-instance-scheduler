@@ -11,7 +11,7 @@ module "instance_scheduler_namespace" {
 }
 
 module "instance_scheduler_action" {
-  source = "git::https://github.com/Cloud-Schematics/terraform-ibm-action"
+  source = "git::https://github.com/nven/terraform-ibm-action"
 
   inventories = var.inventories
 
@@ -31,7 +31,7 @@ module "instance_scheduler_action" {
 }
 
 module "instance_scheduler_function" {
-  source = "git::https://github.com/Cloud-Schematics/terraform-ibm-scheduler"
+  source = "git::https://github.com/nven/terraform-ibm-scheduler"
 
   schedules = {
     for k,s in var.schedules : 
